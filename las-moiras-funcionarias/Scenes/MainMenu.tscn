@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://tsqbnlasddwh"]
+
+[node name="MainMenu" type="Node2D" unique_id=1800856591]
+
+[node name="Panel" type="Panel" parent="." unique_id=1776633605]
+offset_right = 1153.0
+offset_bottom = 662.0
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=1087093165]
+offset_right = 1136.0
+offset_bottom = 660.0
