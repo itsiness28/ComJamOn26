@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://tsqbnlasddwh"]
 
 [ext_resource type="Script" uid="uid://bcpfol7sjea2j" path="res://Scenes/Mainmenu_Manager.gd" id="1_8saeu"]
-[ext_resource type="PackedScene" uid="uid://ptitd4jf35vi" path="res://Prefabs/UITransition.tscn" id="1_853f1"]
 
 [node name="MainMenu" type="Node2D" unique_id=1800856591]
 script = ExtResource("1_8saeu")
@@ -10,8 +9,6 @@ script = ExtResource("1_8saeu")
 offset_right = 1158.0
 offset_bottom = 654.0
 color = Color(0, 0, 0, 1)
-
-[node name="UiTransition" parent="." unique_id=1590936311 instance=ExtResource("1_853f1")]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2036876114]
 
