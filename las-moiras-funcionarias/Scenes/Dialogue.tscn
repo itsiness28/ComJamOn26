@@ -1,3 +1,33 @@
 [gd_scene format=3 uid="uid://b24a0qg3unvta"]
 
+[ext_resource type="Texture2D" uid="uid://dovif4ynj053k" path="res://Assets/Animations/Moira1_Frame1.png" id="1_2842h"]
+[ext_resource type="Texture2D" uid="uid://c3mdcbmlfyym6" path="res://Assets/Animations/Moira1_Frame2.png" id="2_cq6to"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vqc68"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2842h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_cq6to")
+}],
+"loop": true,
+"name": &"Iddle",
+"speed": 6.0
+}]
+
 [node name="Dialogue" type="Node2D" unique_id=930197292]
+
+[node name="Panel" type="Panel" parent="." unique_id=1186659842]
+modulate = Color(0, 0, 0, 1)
+offset_right = 1159.0
+offset_bottom = 656.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=614117355]
+position = Vector2(226, 452)
+scale = Vector2(0.47958964, 0.47958952)
+sprite_frames = SubResource("SpriteFrames_vqc68")
+animation = &"Iddle"
+autoplay = "Iddle"
+frame_progress = 0.9654155
