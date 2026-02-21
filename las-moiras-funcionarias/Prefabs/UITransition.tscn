@@ -1,9 +1,25 @@
 [gd_scene format=3 uid="uid://ptitd4jf35vi"]
 
 [ext_resource type="Shader" uid="uid://b6luwbveyieuu" path="res://Shaders/transition.gdshader" id="1_2vcwg"]
+[ext_resource type="Texture2D" uid="uid://bnrl30ee3vjee" path="res://Assets/Animations/test_shader.jpg" id="2_vjf77"]
+[ext_resource type="Shader" uid="uid://csfvp3im32oie" path="res://Assets/Animations/transition.gdshader" id="3_m14fs"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2vcwg"]
 shader = ExtResource("1_2vcwg")
+shader_parameter/base_color = Color(0, 0, 0, 1)
+shader_parameter/node_resolution = Vector2(0, 0)
+shader_parameter/factor = 0.54
+shader_parameter/width = 0.4
+shader_parameter/gradient_texture = ExtResource("2_vjf77")
+shader_parameter/gradient_fixed = false
+shader_parameter/shape_tiling = 32.0
+shader_parameter/shape_rotation = 0.0
+shader_parameter/shape_scroll = Vector2(0, 0)
+shader_parameter/shape_feathering = 0.0
+shader_parameter/shape_treshold = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q4nwc"]
+shader = ExtResource("3_m14fs")
 shader_parameter/base_color = Color(0, 0, 0, 1)
 shader_parameter/node_resolution = Vector2(0, 0)
 shader_parameter/factor = 0.54
@@ -26,5 +42,13 @@ grow_vertical = 2
 [node name="Shader" type="ColorRect" parent="." unique_id=131363714]
 material = SubResource("ShaderMaterial_2vcwg")
 layout_mode = 0
-offset_right = 1159.0
-offset_bottom = 654.0
+offset_left = -218.0
+offset_top = 228.0
+offset_right = -110.0
+offset_bottom = 331.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=101450]
+material = SubResource("ShaderMaterial_q4nwc")
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

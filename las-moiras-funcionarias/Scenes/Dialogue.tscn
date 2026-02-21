@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b24a0qg3unvta"]
 
 [ext_resource type="Texture2D" uid="uid://dovif4ynj053k" path="res://Assets/Animations/Moira1_Frame1.png" id="1_2842h"]
+[ext_resource type="Script" uid="uid://yurkuxjlblp6" path="res://Scenes/dialogue_manager.gd" id="1_cq6to"]
 [ext_resource type="Texture2D" uid="uid://c3mdcbmlfyym6" path="res://Assets/Animations/Moira1_Frame2.png" id="2_cq6to"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vqc68"]
@@ -18,11 +19,12 @@ animations = [{
 }]
 
 [node name="Dialogue" type="Node2D" unique_id=930197292]
+script = ExtResource("1_cq6to")
 
-[node name="Panel" type="Panel" parent="." unique_id=1186659842]
-modulate = Color(0, 0, 0, 1)
-offset_right = 1159.0
-offset_bottom = 656.0
+[node name="ColorRect" type="ColorRect" parent="." unique_id=650212108]
+offset_right = 1164.0
+offset_bottom = 647.0
+color = Color(0.032163575, 0, 0, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=614117355]
 position = Vector2(226, 452)
@@ -30,4 +32,4 @@ scale = Vector2(0.47958964, 0.47958952)
 sprite_frames = SubResource("SpriteFrames_vqc68")
 animation = &"Iddle"
 autoplay = "Iddle"
-frame_progress = 0.9654155
+frame_progress = 0.7774336
