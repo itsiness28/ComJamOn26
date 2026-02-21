@@ -27,10 +27,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "Day1_1_Tutorial": "res://Timelines/Day1_1_Tutorial.dtl"
 }
-layout/style_directory={
-"": "res://Assets/Dialogic_Characters/Dialogic Custom Styles/Custom_Dialogic_Style.tres",
-"Custom_Dialogic_Style": "res://Assets/Dialogic_Characters/Dialogic Custom Styles/Custom_Dialogic_Style.tres"
-}
+layout/style_directory={}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -64,8 +61,8 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
-layout/style_list=["res://Assets/Dialogic_Characters/Dialogic Custom Styles/Custom_Dialogic_Style.tres"]
-layout/default_style="res://Assets/Dialogic_Characters/Dialogic Custom Styles/Custom_Dialogic_Style.tres"
+layout/style_list=[]
+layout/default_style="Default"
 glossary/default_case_sensitive=true
 variables={
 "currentSpeaker": ""

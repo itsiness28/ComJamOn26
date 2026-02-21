@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://tsqbnlasddwh"]
 
+[ext_resource type="Script" uid="uid://wgfd25v677pr" path="res://Scenes/main_menu.gd" id="1_tt5f1"]
+
 [node name="MainMenu" type="Node2D" unique_id=1800856591]
+script = ExtResource("1_tt5f1")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=911129170]
 offset_right = 1158.0
