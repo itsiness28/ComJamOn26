@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://deqw1k5ip0c1m"]
 
+[ext_resource type="Script" uid="uid://borle6iyxp77s" path="res://Scenes/minigames_manager.gd" id="1_x505d"]
+[ext_resource type="Texture2D" uid="uid://dwfq1bwq1k4cr" path="res://icon.svg" id="2_refja"]
+
 [node name="Minigames" type="Node2D" unique_id=2086720124]
+script = ExtResource("1_x505d")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=588343675]
+position = Vector2(222, 160)
+texture = ExtResource("2_refja")
