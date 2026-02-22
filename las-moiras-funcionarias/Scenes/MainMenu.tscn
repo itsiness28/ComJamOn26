@@ -1,32 +1,85 @@
 [gd_scene format=3 uid="uid://tsqbnlasddwh"]
 
 [ext_resource type="Script" uid="uid://wgfd25v677pr" path="res://Scenes/main_menu.gd" id="1_tt5f1"]
+[ext_resource type="Texture2D" uid="uid://c0iwuc5wae740" path="res://Assets/mENUFondo.png" id="2_df05h"]
+[ext_resource type="FontFile" uid="uid://bbnxsmaj6khhx" path="res://Fonts/PoltawskiNowy-VariableFont_wght.ttf" id="3_8um5k"]
+[ext_resource type="Texture2D" uid="uid://cbx3vvmd53acx" path="res://Assets/hilo_F1.png" id="3_koqhg"]
+[ext_resource type="Texture2D" uid="uid://cknmgtaley2s5" path="res://Assets/hilo_F2.png" id="4_cmrfp"]
+[ext_resource type="Texture2D" uid="uid://b5p1t2o2f3qxv" path="res://Assets/botones.png" id="4_xim88"]
+[ext_resource type="Texture2D" uid="uid://bl8jb4aq5uqrt" path="res://Assets/botones_hover.png" id="5_koqhg"]
+[ext_resource type="Texture2D" uid="uid://b78opuyvy2eki" path="res://Assets/mENUFondoletras.png" id="5_loo7a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_if7li"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_koqhg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cmrfp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cmrfp"]
+texture = ExtResource("4_xim88")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_df05h"]
+texture = ExtResource("5_koqhg")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_loo7a"]
+texture = ExtResource("4_xim88")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_if7li"]
+texture = ExtResource("5_koqhg")
 
 [node name="MainMenu" type="Node2D" unique_id=1800856591]
 script = ExtResource("1_tt5f1")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=911129170]
-offset_right = 1158.0
-offset_bottom = 654.0
-color = Color(0, 0, 0, 1)
-
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2036876114]
+position = Vector2(566.75446, 318.5)
+scale = Vector2(1.420705, 1.4207048)
+texture = ExtResource("2_df05h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=622313259]
+visible = false
+position = Vector2(723.6719, 535)
+scale = Vector2(2.0760148, 1.8761014)
+sprite_frames = SubResource("SpriteFrames_if7li")
+autoplay = "default"
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1474872569]
+position = Vector2(566.75446, 318.5)
+scale = Vector2(1.420705, 1.4207048)
+texture = ExtResource("5_loo7a")
 
 [node name="Button2" type="Button" parent="." unique_id=2145098975]
-offset_left = 835.0
-offset_top = 500.0
-offset_right = 1077.0
-offset_bottom = 572.0
-theme_override_font_sizes/font_size = 37
+offset_left = 279.0
+offset_top = 489.0
+offset_right = 517.0
+offset_bottom = 559.0
+theme_override_fonts/font = ExtResource("3_8um5k")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_cmrfp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_df05h")
 text = "Cerrar"
 
 [node name="Button" type="Button" parent="." unique_id=1896651271]
-offset_left = 835.0
-offset_top = 349.0
-offset_right = 1077.0
-offset_bottom = 421.0
-theme_override_font_sizes/font_size = 37
+offset_left = 268.0
+offset_top = 377.0
+offset_right = 520.0834
+offset_bottom = 443.0
+theme_override_fonts/font = ExtResource("3_8um5k")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_loo7a")
+theme_override_styles/hover = SubResource("StyleBoxTexture_if7li")
 text = "Jugar"
+
+[node name="Snip" type="AudioStreamPlayer2D" parent="." unique_id=1645670946]
+
+[node name="music" type="AudioStreamPlayer2D" parent="." unique_id=1821052565]
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

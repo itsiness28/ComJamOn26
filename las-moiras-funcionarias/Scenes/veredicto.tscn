@@ -1,38 +1,109 @@
 [gd_scene format=3 uid="uid://ecx0kcmcwwro"]
 
 [ext_resource type="Script" uid="uid://dbd14m8hciahs" path="res://Scenes/veredicto.gd" id="1_lo05i"]
-[ext_resource type="Texture2D" uid="uid://dwfq1bwq1k4cr" path="res://icon.svg" id="2_bu128"]
+[ext_resource type="Texture2D" uid="uid://ck1p2a2tvmait" path="res://Assets/FondoVeredicto.png" id="2_4hlhc"]
+[ext_resource type="Texture2D" uid="uid://ctvrodmo1hcwp" path="res://Assets/SegundaOportunidad_F1.png" id="3_2g0me"]
+[ext_resource type="Texture2D" uid="uid://cbx3vvmd53acx" path="res://Assets/hilo_F1.png" id="3_pkjc8"]
+[ext_resource type="Texture2D" uid="uid://cknmgtaley2s5" path="res://Assets/hilo_F2.png" id="4_3ef75"]
+[ext_resource type="Texture2D" uid="uid://c7unsvv40wvwf" path="res://Assets/Cortar_F1.png" id="4_5uovg"]
+[ext_resource type="Texture2D" uid="uid://vfy0frbveqse" path="res://Assets/SegundaOportunidad_F2.png" id="4_pkjhm"]
+[ext_resource type="Texture2D" uid="uid://xrjanpotf8o4" path="res://Assets/Cortar_F2.png" id="5_2g0me"]
+[ext_resource type="Texture2D" uid="uid://b2kak1rftigdt" path="res://Assets/SegundaOportunidad_F3.png" id="5_pkjc8"]
+[ext_resource type="Texture2D" uid="uid://bqincfku7n62g" path="res://Assets/Cortar_F33.png" id="6_pkjhm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u4xx3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_pkjc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3ef75")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3ef75"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_2g0me")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pkjhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pkjc8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_msrvr"]
-size = Vector2(273, 149)
+size = Vector2(182, 149)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pkjc8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_5uovg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2g0me")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pkjhm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lo05i"]
-size = Vector2(314, 179)
+size = Vector2(212, 179)
 
 [node name="Veredicto" type="Node2D" unique_id=759958888]
 script = ExtResource("1_lo05i")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1960971113]
+position = Vector2(566.75006, 324.75)
+scale = Vector2(1.4640646, 1.5407488)
+texture = ExtResource("2_4hlhc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1112377492]
+position = Vector2(573, 326)
+scale = Vector2(1.4138786, 1.4162996)
+sprite_frames = SubResource("SpriteFrames_u4xx3")
+autoplay = "default"
+frame_progress = 0.175623
+
 [node name="Vivir" type="Node2D" parent="." unique_id=496748911]
 
-[node name="Sprite2D" type="Sprite2D" parent="Vivir" unique_id=1594237929]
-position = Vector2(956.5, 533)
-scale = Vector2(2.1328125, 1.171875)
-texture = ExtResource("2_bu128")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Vivir" unique_id=2028174778]
+position = Vector2(769, 419)
+sprite_frames = SubResource("SpriteFrames_3ef75")
+frame_progress = 0.20484342
 
 [node name="Area2D_Vivir" type="Area2D" parent="Vivir" unique_id=1759898494]
+position = Vector2(61, 14)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Vivir/Area2D_Vivir" unique_id=2072372700]
-position = Vector2(957, 534)
+position = Vector2(967, 534)
 shape = SubResource("RectangleShape2D_msrvr")
 
 [node name="Morir" type="Node2D" parent="." unique_id=1584679099]
 
-[node name="Sprite2D" type="Sprite2D" parent="Morir" unique_id=724651333]
-position = Vector2(586.5, 287.5)
-scale = Vector2(2.4609375, 1.3828125)
-texture = ExtResource("2_bu128")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Morir" unique_id=1506224214]
+position = Vector2(627, 321)
+sprite_frames = SubResource("SpriteFrames_pkjc8")
+autoplay = "default"
+frame_progress = 0.60857236
 
 [node name="Area2D_Morir" type="Area2D" parent="Morir" unique_id=45877605]
+position = Vector2(-14, 51)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Morir/Area2D_Morir" unique_id=919504488]
 position = Vector2(586, 287)
