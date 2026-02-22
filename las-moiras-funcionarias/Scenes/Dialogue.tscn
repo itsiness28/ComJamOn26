@@ -1,35 +1,15 @@
 [gd_scene format=3 uid="uid://b24a0qg3unvta"]
 
-[ext_resource type="Texture2D" uid="uid://dovif4ynj053k" path="res://Assets/Animations/Moira1_Frame1.png" id="1_2842h"]
-[ext_resource type="Script" path="res://Scenes/dialogue_manager.gd" id="1_cq6to"]
-[ext_resource type="Texture2D" uid="uid://c3mdcbmlfyym6" path="res://Assets/Animations/Moira1_Frame2.png" id="2_cq6to"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_vqc68"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_2842h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_cq6to")
-}],
-"loop": true,
-"name": &"Iddle",
-"speed": 6.0
-}]
+[ext_resource type="Script" uid="uid://yurkuxjlblp6" path="res://Scenes/dialogue_manager.gd" id="1_cq6to"]
+[ext_resource type="Texture2D" uid="uid://eervxhos3mqn" path="res://Assets/Fondo.png" id="2_vqc68"]
+[ext_resource type="PackedScene" uid="uid://85moe5qkwry2" path="res://Assets/Animations/ClothoAnimated.tscn" id="3_cq6to"]
 
 [node name="Dialogue" type="Node2D" unique_id=930197292]
 script = ExtResource("1_cq6to")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=650212108]
-offset_right = 1164.0
-offset_bottom = 647.0
-color = Color(0.032163575, 0, 0, 1)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=262716512]
+position = Vector2(579.7777, 321.25)
+scale = Vector2(0.60879624, 0.6087963)
+texture = ExtResource("2_vqc68")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=614117355]
-position = Vector2(226, 452)
-scale = Vector2(0.47958964, 0.47958952)
-sprite_frames = SubResource("SpriteFrames_vqc68")
-animation = &"Iddle"
-autoplay = "Iddle"
-frame_progress = 0.7774336
+[node name="ClothoAnimated" parent="." unique_id=246253251 instance=ExtResource("3_cq6to")]

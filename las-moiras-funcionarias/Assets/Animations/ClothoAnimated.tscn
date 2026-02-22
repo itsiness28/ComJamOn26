@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://85moe5qkwry2"]
+
+[ext_resource type="Texture2D" uid="uid://dovif4ynj053k" path="res://Assets/Animations/Moira1_Frame1.png" id="1_iv681"]
+[ext_resource type="Texture2D" uid="uid://c3mdcbmlfyym6" path="res://Assets/Animations/Moira1_Frame2.png" id="2_wmnox"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iv681"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_iv681")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wmnox")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ClothoAnimated" type="AnimatedSprite2D" unique_id=1343288265]
+position = Vector2(232, 454.00003)
+scale = Vector2(0.45823666, 0.45823663)
+sprite_frames = SubResource("SpriteFrames_iv681")
+autoplay = "default"
+frame_progress = 0.5399934

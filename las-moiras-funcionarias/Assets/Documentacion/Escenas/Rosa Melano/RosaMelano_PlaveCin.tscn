@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://t1fq6qdd5hou"]
+
+[ext_resource type="Script" uid="uid://b4vhnr18tv7up" path="res://Assets/Documentacion/Escenas/Rosa Melano/rosa_melano_plave_cin.gd" id="1_b6vk5"]
+[ext_resource type="Texture2D" uid="uid://brbtefhh7vh4h" path="res://Assets/Documentacion/Escenas/Rosa Melano/RosaMelano_PlaveCin.png" id="1_ceb6g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b6vk5"]
+size = Vector2(213, 115)
+
+[node name="RosaMelanoPlaveCin" type="Node2D" unique_id=29676879]
+script = ExtResource("1_b6vk5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1052622530]
+position = Vector2(900.14703, 490.25)
+scale = Vector2(0.5117647, 0.5117647)
+texture = ExtResource("1_ceb6g")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=548407593]
+position = Vector2(900.14703, 490.25)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=64409058]
+position = Vector2(-1.5, -3.5)
+shape = SubResource("RectangleShape2D_b6vk5")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dm1vse7mff7wx"]
+
+[ext_resource type="Texture2D" uid="uid://cokv1i2q4ut3e" path="res://Assets/Documentacion/Escenas/Rosa Melano/RosaMelano_F1.png" id="1_gsjvr"]
+[ext_resource type="Texture2D" uid="uid://ns3f18rkkisn" path="res://Assets/Documentacion/Escenas/Rosa Melano/RosaMelano_F2.png" id="2_hn8n1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iirxp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gsjvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hn8n1")
+}],
+"loop": true,
+"name": &"iddle",
+"speed": 6.0
+}]
+
+[node name="RosaMelanoSprite" type="Node2D" unique_id=516054366]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=287733704]
+position = Vector2(-86, 422)
+scale = Vector2(0.6698357, 0.6698356)
+sprite_frames = SubResource("SpriteFrames_iirxp")
+animation = &"iddle"
+autoplay = "iddle"
+frame_progress = 0.38466433
