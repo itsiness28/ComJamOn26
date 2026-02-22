@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ecx0kcmcwwro"]
 
 [ext_resource type="Script" uid="uid://dbd14m8hciahs" path="res://Scenes/veredicto.gd" id="1_lo05i"]
-[ext_resource type="Script" uid="uid://c4fdvrm07r27d" path="res://Scenes/area_2d_vivir.gd" id="2_iis72"]
+[ext_resource type="Texture2D" uid="uid://dwfq1bwq1k4cr" path="res://icon.svg" id="2_bu128"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_msrvr"]
 size = Vector2(273, 149)
@@ -12,23 +12,31 @@ size = Vector2(314, 179)
 [node name="Veredicto" type="Node2D" unique_id=759958888]
 script = ExtResource("1_lo05i")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=387900344]
-offset_right = 1164.0
-offset_bottom = 658.0
-color = Color(0, 0, 0, 1)
+[node name="Vivir" type="Node2D" parent="." unique_id=496748911]
 
-[node name="Area2D_Vivir" type="Area2D" parent="." unique_id=1759898494]
-script = ExtResource("2_iis72")
+[node name="Sprite2D" type="Sprite2D" parent="Vivir" unique_id=1594237929]
+position = Vector2(956.5, 533)
+scale = Vector2(2.1328125, 1.171875)
+texture = ExtResource("2_bu128")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Vivir" unique_id=2072372700]
+[node name="Area2D_Vivir" type="Area2D" parent="Vivir" unique_id=1759898494]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vivir/Area2D_Vivir" unique_id=2072372700]
 position = Vector2(957, 534)
 shape = SubResource("RectangleShape2D_msrvr")
 
-[node name="Area2D_Morir" type="Area2D" parent="Area2D_Vivir" unique_id=45877605]
+[node name="Morir" type="Node2D" parent="." unique_id=1584679099]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Vivir/Area2D_Morir" unique_id=919504488]
+[node name="Sprite2D" type="Sprite2D" parent="Morir" unique_id=724651333]
+position = Vector2(586.5, 287.5)
+scale = Vector2(2.4609375, 1.3828125)
+texture = ExtResource("2_bu128")
+
+[node name="Area2D_Morir" type="Area2D" parent="Morir" unique_id=45877605]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Morir/Area2D_Morir" unique_id=919504488]
 position = Vector2(586, 287)
 shape = SubResource("RectangleShape2D_lo05i")
 
-[connection signal="input_event" from="Area2D_Vivir" to="Area2D_Vivir" method="_on_input_event"]
-[connection signal="input_event" from="Area2D_Vivir/Area2D_Morir" to="." method="_on_area_2d_morir_input_event"]
+[connection signal="input_event" from="Vivir/Area2D_Vivir" to="." method="_on_area_2d_vivir_input_event"]
+[connection signal="input_event" from="Morir/Area2D_Morir" to="." method="_on_area_2d_morir_input_event"]

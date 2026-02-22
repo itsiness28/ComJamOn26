@@ -1,0 +1,9 @@
+Moira1: Vale, esta es tu mesa. Aquí irán pasando los que tengan cita.
+Moira1: Tienes que revisar que su documentación está en regla.
+Moira1: Necesitan presentar\: el Certificado de defunción, el testamento, el DNI y por supuestísimo, la Plave Cin en orden. Asegúrate de que no haya nada raro.
+Moira1: Si todo está bien, déjales pasar. Si falla algo o es uno de los casos a continuación, tendrán que volver. Algunas veces tendrás que hacer un juicio moral.
+Moira1: Si la persona deja sola a un animal con su fallecimiento, tendrá que volver. Si no tiene algo de documentación o detectas una falsificación, igual. Y como no, sin Plave Cin no te puedes morir así que andandito para arriba a creársela. 
+Moira1: EN LA AGENCIA TRIBUTARIA O SEGURIDAD SOCIAL, SEÑORA, AQUÍ NO.
+Moira1: Cuando creas que hay un error, entra en modo inspección y clicka sobre él. En el caso de que encuentres el fallo, dirígete a dar el Veredicto.
+Moira1: En todos los casos, una vez entres a dar el Veredicto, no puedes echarte atrás así que asegúrate de que lo tienes claro.
+set {currentSpeaker} = "Rosa_Melano"

@@ -25,7 +25,8 @@ directories/dch_directory={
 "Moira1": "res://Assets/Dialogic_Characters/Moira1.dch"
 }
 directories/dtl_directory={
-"Day1_1_Tutorial": "res://Timelines/Day1_1_Tutorial.dtl"
+"Day1_1_Tutorial": "res://Timelines/Day1_1_Tutorial.dtl",
+"Tutorial": "res://Timelines/Tutorial.dtl"
 }
 layout/style_directory={
 "": "res://Timelines/Custom1.tres",
@@ -68,6 +69,10 @@ layout/style_list=["res://Timelines/Custom1.tres"]
 layout/default_style="res://Timelines/Custom1.tres"
 glossary/default_case_sensitive=true
 variables={
+"ContadorMuerte": 0,
+"ContadorVida": 0,
+"RM_estado": true,
+"_1_1CinemDone": false,
 "currentSpeaker": ""
 }
 

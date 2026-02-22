@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b24a0qg3unvta"]
+
+[ext_resource type="Script" uid="uid://yurkuxjlblp6" path="res://Scenes/dialogue_manager.gd" id="1_cq6to"]
+[ext_resource type="Texture2D" uid="uid://eervxhos3mqn" path="res://Assets/Fondo.png" id="2_vqc68"]
+[ext_resource type="PackedScene" uid="uid://85moe5qkwry2" path="res://Assets/Animations/ClothoAnimated.tscn" id="3_cq6to"]
+
+[node name="Dialogue" type="Node2D" unique_id=930197292]
+script = ExtResource("1_cq6to")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=262716512]
+position = Vector2(579.7777, 321.25)
+scale = Vector2(0.60879624, 0.6087963)
+texture = ExtResource("2_vqc68")
+
+[node name="ClothoAnimated" parent="." unique_id=246253251 instance=ExtResource("3_cq6to")]

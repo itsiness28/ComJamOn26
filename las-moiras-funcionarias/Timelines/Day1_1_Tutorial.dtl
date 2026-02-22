@@ -6,7 +6,11 @@ Moira1: Hola, ¿eres la nueva?
 - Efectivamente
 	Moira1: Perfecto. Tan solo han tardado cinco meses en poner a una persona nueva.
 Moira1: En fin, bienvenida. Te explico.
-Moira1: Previamente estaban Lachesis y Atropos pero un martes a las 13 se escaparon a una isla juntas para vivir un romance.
+Moira1: Previamente estaban Lachesis y Atropos pero un martes a las 13 se escaparon a una isla para vivir un romance juntas.
 Moira1: Y he estado haciendo el trabajo de las tres. No estoy yo tan acostumbrada a lo de trabajar.
+Moira1: Tendrás que decididr tú si cortas el hilo de los visitantes para dejarles descansar o no.
 Moira1: Por cierto, tendrás que pensar un nombre artístico, que el puesto lo requiere. Lourdes... no tiene punch.
 Moira1: Eso sí, aquí de leyenda tenemos poco, que somos trabajadoras públicas.
+Moira1: Y por tanto, a las doce vamos a tomar tranquilamente un café, ¿vale?
+Moira1: Bueno, te enseño tu mesa, ven.
+set {_1_1CinemDone} = true
