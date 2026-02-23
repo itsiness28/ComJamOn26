@@ -8,6 +8,9 @@ var tutorialCompletado = false
 var reestablecerEscena = false
 
 #region
+var patito = preload("res://Assets/Documentacion/Escenas/Patito.tscn")
+
+#ROSA MELANO
 var RosaMelano_CdD = preload("res://Assets/Documentacion/Escenas/Rosa Melano/RosaMelano_CdD.tscn")
 var RosaMelano_DNI = preload("res://Assets/Documentacion/Escenas/Rosa Melano/RosaMelano_DNI.tscn")
 var RosaMelano_PlaveCin = preload("res://Assets/Documentacion/Escenas/Rosa Melano/RosaMelano_PlaveCin.tscn")
@@ -17,6 +20,8 @@ var RosaMelano_Testamento = preload("res://Assets/Documentacion/Escenas/Rosa Mel
 #endregion
 
 func _ready():
+	var patito_instance: Node = patito.instantiate()
+	add_child(patito_instance)
 	Dialogic.VAR.currentSpeaker = ""	
 	if tutorialCompletado == false:
 		Dialogic.start("Tutorial")

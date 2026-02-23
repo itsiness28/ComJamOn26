@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b6xnftlqd7r08"]
+
+[ext_resource type="Script" uid="uid://ber3hrnm4ehko" path="res://Assets/Documentacion/Escenas/patito.gd" id="1_f1tf6"]
+[ext_resource type="Texture2D" uid="uid://dupqocfm5437y" path="res://Assets/patito.png" id="1_qwdjn"]
+[ext_resource type="AudioStream" uid="uid://dvbmdq8eqw2og" path="res://Sound/SFX/squeakey.mp3" id="3_4sqwq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f1tf6"]
+radius = 102.0
+height = 204.0
+
+[node name="Patito" type="Node2D" unique_id=1944531768]
+position = Vector2(1706, 814)
+script = ExtResource("1_f1tf6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1062024037]
+position = Vector2(13.5, 3.5)
+texture = ExtResource("1_qwdjn")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1841897945]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1254387026]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("CapsuleShape2D_f1tf6")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Area2D" unique_id=856701325]
+stream = ExtResource("3_4sqwq")
+volume_db = -4.068
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
