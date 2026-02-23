@@ -19,7 +19,7 @@ var RosaMelano_Testamento = preload("res://Assets/Documentacion/Escenas/Rosa Mel
 func _ready():
 	Dialogic.VAR.currentSpeaker = ""	
 	if tutorialCompletado == false:
-		Dialogic.start("Tutorial")
+		#Dialogic.start("Tutorial")
 		tutorialCompletado = true
 	
 	
