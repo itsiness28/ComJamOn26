@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bjpsvlpw1xue6"]
+
+[ext_resource type="AudioStream" uid="uid://dvbgoqs3k1wj4" path="res://Sound/pianocafe_kumi-romantic-pianofragile-324561-[AudioTrimmer.com].mp3" id="1_0js2i"]
+
+[node name="Persistentmusic" type="AudioStreamPlayer2D" unique_id=1904865938]
+stream = ExtResource("1_0js2i")
+autoplay = true

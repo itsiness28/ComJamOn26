@@ -15,8 +15,8 @@ texture = ExtResource("5_aohln")
 script = ExtResource("1_bws2a")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=361082907]
-position = Vector2(579, 329)
-scale = Vector2(1.4863693, 1.4735683)
+position = Vector2(961.125, 551.25)
+scale = Vector2(2.4333954, 2.4526432)
 texture = ExtResource("1_mxshm")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1521224826]
@@ -24,28 +24,30 @@ stream = ExtResource("2_6k4ua")
 autoplay = true
 
 [node name="Label" type="Label" parent="." unique_id=1058478400]
-offset_left = -67.0
-offset_top = 140.0
-offset_right = 1229.0
-offset_bottom = 387.0
+offset_left = 304.0
+offset_top = 385.0
+offset_right = 1600.0
+offset_bottom = 692.0
 theme_override_fonts/font = ExtResource("4_22plq")
-theme_override_font_sizes/font_size = 36
+theme_override_font_sizes/font_size = 45
 text = "¡Gracias por jugar a esta breve demo! <3
 
 El proyecto se va a continuar así que si te ha interesado, 
 eventualmente se publicará la versión completa. 
 "
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="." unique_id=736392020]
-offset_left = 419.0
-offset_top = 470.0
-offset_right = 690.0
-offset_bottom = 553.0
+offset_left = 824.0
+offset_top = 875.0
+offset_right = 1095.0
+offset_bottom = 958.0
 theme_override_fonts/font = ExtResource("4_22plq")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 31
 theme_override_styles/normal = SubResource("StyleBoxTexture_ue4bq")
 theme_override_styles/hover = SubResource("StyleBoxTexture_nrldl")
 text = "Volver al menu"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

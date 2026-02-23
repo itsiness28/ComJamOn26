@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://xrjanpotf8o4" path="res://Assets/Cortar_F2.png" id="5_2g0me"]
 [ext_resource type="Texture2D" uid="uid://b2kak1rftigdt" path="res://Assets/SegundaOportunidad_F3.png" id="5_pkjc8"]
 [ext_resource type="Texture2D" uid="uid://bqincfku7n62g" path="res://Assets/Cortar_F33.png" id="6_pkjhm"]
+[ext_resource type="FontFile" uid="uid://bbnxsmaj6khhx" path="res://Fonts/PoltawskiNowy-VariableFont_wght.ttf" id="11_3ef75"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u4xx3"]
 animations = [{
@@ -43,7 +44,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_msrvr"]
-size = Vector2(182, 149)
+size = Vector2(261, 206.5)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pkjc8"]
 animations = [{
@@ -63,19 +64,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lo05i"]
-size = Vector2(212, 179)
+size = Vector2(238, 228.5)
 
 [node name="Veredicto" type="Node2D" unique_id=759958888]
 script = ExtResource("1_lo05i")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1960971113]
-position = Vector2(566.75006, 324.75)
-scale = Vector2(1.4640646, 1.5407488)
+position = Vector2(963, 539)
+scale = Vector2(2.4460967, 2.4845815)
 texture = ExtResource("2_4hlhc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1112377492]
-position = Vector2(573, 326)
-scale = Vector2(1.4138786, 1.4162996)
+position = Vector2(971.2501, 555.25)
+scale = Vector2(2.4008675, 2.4262116)
 sprite_frames = SubResource("SpriteFrames_u4xx3")
 autoplay = "default"
 frame_progress = 0.175623
@@ -83,21 +84,24 @@ frame_progress = 0.175623
 [node name="Vivir" type="Node2D" parent="." unique_id=496748911]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Vivir" unique_id=2028174778]
-position = Vector2(769, 419)
+position = Vector2(1339.75, 746)
+scale = Vector2(1.3525403, 1.3348018)
 sprite_frames = SubResource("SpriteFrames_3ef75")
+autoplay = "default"
 frame_progress = 0.20484342
 
 [node name="Area2D_Vivir" type="Area2D" parent="Vivir" unique_id=1759898494]
-position = Vector2(61, 14)
+position = Vector2(774, 417)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Vivir/Area2D_Vivir" unique_id=2072372700]
-position = Vector2(967, 534)
+position = Vector2(927.5, 505.25)
 shape = SubResource("RectangleShape2D_msrvr")
 
 [node name="Morir" type="Node2D" parent="." unique_id=1584679099]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Morir" unique_id=1506224214]
-position = Vector2(627, 321)
+position = Vector2(1030, 560)
+scale = Vector2(1.321586, 1.3215859)
 sprite_frames = SubResource("SpriteFrames_pkjc8")
 autoplay = "default"
 frame_progress = 0.60857236
@@ -106,8 +110,26 @@ frame_progress = 0.60857236
 position = Vector2(-14, 51)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Morir/Area2D_Morir" unique_id=919504488]
-position = Vector2(586, 287)
+position = Vector2(971, 529.75)
 shape = SubResource("RectangleShape2D_lo05i")
+
+[node name="Label2" type="Label" parent="." unique_id=1237586851]
+offset_left = 807.0
+offset_top = 379.0
+offset_right = 1400.0
+offset_bottom = 518.0
+theme_override_fonts/font = ExtResource("11_3ef75")
+theme_override_font_sizes/font_size = 39
+text = "Cortar cuerda"
+
+[node name="Label" type="Label" parent="." unique_id=1796932968]
+offset_left = 1461.0
+offset_top = 759.0
+offset_right = 2054.0
+offset_bottom = 898.0
+theme_override_fonts/font = ExtResource("11_3ef75")
+theme_override_font_sizes/font_size = 34
+text = "Volver al mundo de los vivos"
 
 [connection signal="input_event" from="Vivir/Area2D_Vivir" to="." method="_on_area_2d_vivir_input_event"]
 [connection signal="input_event" from="Morir/Area2D_Morir" to="." method="_on_area_2d_morir_input_event"]

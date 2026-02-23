@@ -5,11 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://85moe5qkwry2" path="res://Assets/Animations/ClothoAnimated.tscn" id="3_cq6to"]
 
 [node name="Dialogue" type="Node2D" unique_id=930197292]
+position = Vector2(-16, -12)
 script = ExtResource("1_cq6to")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=262716512]
-position = Vector2(579.7777, 321.25)
-scale = Vector2(0.60879624, 0.6087963)
+position = Vector2(971.7777, 541.75)
+scale = Vector2(1.0171295, 1.0171297)
 texture = ExtResource("2_vqc68")
 
 [node name="ClothoAnimated" parent="." unique_id=246253251 instance=ExtResource("3_cq6to")]
+position = Vector2(371.75, 743.5515)
+scale = Vector2(0.78248256, 0.78248245)

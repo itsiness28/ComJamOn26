@@ -22,28 +22,28 @@ texture = ExtResource("5_366wx")
 script = ExtResource("1_x505d")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=455380180]
-position = Vector2(578, 322)
-scale = Vector2(0.6790052, 0.6947585)
+position = Vector2(964, 539)
+scale = Vector2(1.1255062, 1.1408015)
 texture = ExtResource("2_x505d")
 
 [node name="Button" type="Button" parent="." unique_id=1084771756]
-offset_left = 846.0
-offset_top = 14.0
-offset_right = 1185.0
-offset_bottom = 102.0
+offset_left = 1387.0
+offset_top = 38.0
+offset_right = 1995.6592
+offset_bottom = 196.0
 theme_override_fonts/font = ExtResource("3_ep77g")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 53
 theme_override_styles/normal = SubResource("StyleBoxTexture_ewveo")
 theme_override_styles/hover = SubResource("StyleBoxTexture_s44yk")
 text = "  Modo Detección"
 
 [node name="Button2" type="Button" parent="." unique_id=1548134264]
-offset_left = 23.0
-offset_top = 530.0
-offset_right = 356.0337
-offset_bottom = 625.0
+offset_left = 35.0
+offset_top = 928.0
+offset_right = 483.0
+offset_bottom = 1059.0
 theme_override_fonts/font = ExtResource("3_ep77g")
-theme_override_font_sizes/font_size = 39
+theme_override_font_sizes/font_size = 51
 theme_override_styles/normal = SubResource("StyleBoxTexture_nmc5i")
 theme_override_styles/hover = SubResource("StyleBoxTexture_s4fv6")
 text = "  Dar Veredicto  "

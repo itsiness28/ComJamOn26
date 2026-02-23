@@ -39,8 +39,8 @@ texture = ExtResource("5_koqhg")
 script = ExtResource("1_tt5f1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2036876114]
-position = Vector2(566.75446, 318.5)
-scale = Vector2(1.420705, 1.4207048)
+position = Vector2(967.25, 542.5)
+scale = Vector2(2.413259, 2.407489)
 texture = ExtResource("2_df05h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=622313259]
@@ -51,35 +51,35 @@ sprite_frames = SubResource("SpriteFrames_if7li")
 autoplay = "default"
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1474872569]
-position = Vector2(566.75446, 318.5)
-scale = Vector2(1.420705, 1.4207048)
+position = Vector2(961.75, 546.5)
+scale = Vector2(2.3996282, 2.42511)
 texture = ExtResource("5_loo7a")
 
 [node name="Button2" type="Button" parent="." unique_id=2145098975]
-offset_left = 279.0
-offset_top = 489.0
-offset_right = 517.0
-offset_bottom = 559.0
+offset_left = 514.0
+offset_top = 756.0
+offset_right = 752.0
+offset_bottom = 826.0
 theme_override_fonts/font = ExtResource("3_8um5k")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 52
 theme_override_styles/normal = SubResource("StyleBoxTexture_cmrfp")
 theme_override_styles/hover = SubResource("StyleBoxTexture_df05h")
 text = "Cerrar"
+metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="." unique_id=1896651271]
-offset_left = 268.0
-offset_top = 377.0
-offset_right = 520.0834
-offset_bottom = 443.0
+offset_left = 512.0
+offset_top = 627.0
+offset_right = 764.0834
+offset_bottom = 702.0
 theme_override_fonts/font = ExtResource("3_8um5k")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 57
 theme_override_styles/normal = SubResource("StyleBoxTexture_loo7a")
 theme_override_styles/hover = SubResource("StyleBoxTexture_if7li")
 text = "Jugar"
+metadata/_edit_use_anchors_ = true
 
 [node name="Snip" type="AudioStreamPlayer2D" parent="." unique_id=1645670946]
-
-[node name="music" type="AudioStreamPlayer2D" parent="." unique_id=1821052565]
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
