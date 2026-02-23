@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dm1vse7mff7wx"]
 
 [ext_resource type="Texture2D" uid="uid://cokv1i2q4ut3e" path="res://Assets/Documentacion/Escenas/Rosa Melano/RosaMelano_F1.png" id="1_gsjvr"]
-[ext_resource type="Texture2D" uid="uid://eervxhos3mqn" path="res://Assets/Fondo.png" id="1_hn8n1"]
 [ext_resource type="Texture2D" uid="uid://ns3f18rkkisn" path="res://Assets/Documentacion/Escenas/Rosa Melano/RosaMelano_F2.png" id="2_hn8n1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iirxp"]
@@ -19,11 +18,6 @@ animations = [{
 }]
 
 [node name="RosaMelanoSprite" type="Node2D" unique_id=516054366]
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1882997394]
-position = Vector2(579.2222, 323.50003)
-scale = Vector2(0.60810184, 0.6064815)
-texture = ExtResource("1_hn8n1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=287733704]
 position = Vector2(-86, 422)

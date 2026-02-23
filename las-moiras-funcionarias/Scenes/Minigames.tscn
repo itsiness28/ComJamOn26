@@ -3,12 +3,8 @@
 [ext_resource type="Script" uid="uid://borle6iyxp77s" path="res://Scenes/minigames_manager.gd" id="1_x505d"]
 [ext_resource type="Texture2D" uid="uid://cx152ldnwcli3" path="res://Assets/fondominijuego.png" id="2_x505d"]
 [ext_resource type="FontFile" uid="uid://bbnxsmaj6khhx" path="res://Fonts/PoltawskiNowy-VariableFont_wght.ttf" id="3_ep77g"]
-[ext_resource type="Texture2D" uid="uid://3j742kgfrdft" path="res://Assets/Documentacion/Escenas/Dolores Crotal/DoloresCrotal_CdD.png" id="3_s4fv6"]
 [ext_resource type="Texture2D" uid="uid://b5p1t2o2f3qxv" path="res://Assets/botones.png" id="4_366wx"]
-[ext_resource type="Texture2D" uid="uid://b6w4q47sbv42s" path="res://Assets/Documentacion/Escenas/Dolores Crotal/DoloresCrotal_PlaveCin.png" id="4_l1p5f"]
 [ext_resource type="Texture2D" uid="uid://bl8jb4aq5uqrt" path="res://Assets/botones_hover.png" id="5_366wx"]
-[ext_resource type="Texture2D" uid="uid://dttussob28w5i" path="res://Assets/Documentacion/Escenas/Dolores Crotal/DoloresCrotal_DNI.png" id="5_wcrjo"]
-[ext_resource type="Texture2D" uid="uid://dyu0xqejpd0eg" path="res://Assets/Documentacion/Escenas/Dolores Crotal/DoloresCrotal_Testamento.png" id="6_napn6"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ewveo"]
 texture = ExtResource("4_366wx")
@@ -26,53 +22,31 @@ texture = ExtResource("5_366wx")
 script = ExtResource("1_x505d")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=455380180]
-position = Vector2(570, 333)
-scale = Vector2(0.67611337, 0.7029804)
+position = Vector2(964, 539)
+scale = Vector2(1.1255062, 1.1408015)
 texture = ExtResource("2_x505d")
 
-[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=126702554]
-position = Vector2(572, 388)
-scale = Vector2(0.44458127, 0.44458127)
-texture = ExtResource("3_s4fv6")
-
-[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=2030087795]
-position = Vector2(222, 386)
-scale = Vector2(0.4877551, 0.4877551)
-texture = ExtResource("4_l1p5f")
-
-[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=284593308]
-position = Vector2(169.00002, 192)
-scale = Vector2(0.36188552, 0.37626594)
-texture = ExtResource("5_wcrjo")
-
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=366020490]
-position = Vector2(955, 239)
-scale = Vector2(0.38848776, 0.4039253)
-texture = ExtResource("6_napn6")
-
 [node name="Button" type="Button" parent="." unique_id=1084771756]
-offset_left = 1253.0
-offset_top = 115.0
-offset_right = 1861.6592
-offset_bottom = 273.0
+offset_left = 1387.0
+offset_top = 38.0
+offset_right = 1995.6592
+offset_bottom = 196.0
 theme_override_fonts/font = ExtResource("3_ep77g")
 theme_override_font_sizes/font_size = 53
 theme_override_styles/normal = SubResource("StyleBoxTexture_ewveo")
 theme_override_styles/hover = SubResource("StyleBoxTexture_s44yk")
 text = "  Modo Detección"
-metadata/_edit_use_anchors_ = true
 
 [node name="Button2" type="Button" parent="." unique_id=1548134264]
-offset_left = -663.0
-offset_top = 427.0
-offset_right = -215.0
-offset_bottom = 558.0
+offset_left = 35.0
+offset_top = 928.0
+offset_right = 483.0
+offset_bottom = 1059.0
 theme_override_fonts/font = ExtResource("3_ep77g")
 theme_override_font_sizes/font_size = 51
 theme_override_styles/normal = SubResource("StyleBoxTexture_nmc5i")
 theme_override_styles/hover = SubResource("StyleBoxTexture_s4fv6")
 text = "  Dar Veredicto  "
-metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
