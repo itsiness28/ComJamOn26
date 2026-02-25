@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://brccswcoktjdt"]
+
+[ext_resource type="Script" uid="uid://df2a121uodu68" path="res://Assets/Documentacion/Escenas/Ben Dover/ben_dover_dni.gd" id="1_bj5lc"]
+[ext_resource type="Texture2D" uid="uid://e5fw5laytqph" path="res://Assets/Documentacion/Escenas/Ben Dover/BenDover_DNI.png" id="1_hpsvs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hpsvs"]
+size = Vector2(321.5, 197.5)
+
+[node name="BenDoverDni" type="Node2D" unique_id=862365532]
+script = ExtResource("1_bj5lc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=965190389]
+position = Vector2(1549, 261)
+scale = Vector2(0.5416667, 0.5416667)
+texture = ExtResource("1_hpsvs")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1138054588]
+position = Vector2(1537, 264)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2125591985]
+position = Vector2(14, -8)
+shape = SubResource("RectangleShape2D_hpsvs")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cedno7hqh5mpu"]
+
+[ext_resource type="Texture2D" uid="uid://ctxfcwojnybho" path="res://Assets/Documentacion/Escenas/Ben Dover/BenDover_PlaveCin.png" id="1_bqo0y"]
+
+[node name="BenDoverPlaveCin" type="Node2D" unique_id=1141730649]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2010358903]
+texture = ExtResource("1_bqo0y")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=156890744]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=304432222]
