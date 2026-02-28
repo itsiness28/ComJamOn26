@@ -41,7 +41,7 @@ overrides = {
 "name_label_custom_font_size": "16.0",
 "name_label_font": "\"res://Fonts/LibreBodoni-VariableFont_wght.ttf\"",
 "normal_font": "\"res://Fonts/PoltawskiNowy-VariableFont_wght.ttf\"",
-"text_size": "23.0",
+"text_size": "29.0",
 "text_use_global_font": "false"
 }
 

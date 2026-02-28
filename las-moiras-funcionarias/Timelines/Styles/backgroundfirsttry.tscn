@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://y5hjth3nnrg1"]
+
+[ext_resource type="Script" uid="uid://oxcjhq2817c7" path="res://addons/dialogic/Modules/Background/node_background_holder.gd" id="1_3vadg"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3vadg"]
+
+[node name="Backgroundfirsttry" type="ColorRect" unique_id=1134159129]
+material = SubResource("CanvasItemMaterial_3vadg")
+script = ExtResource("1_3vadg")
+metadata/_custom_type_script = "uid://oxcjhq2817c7"

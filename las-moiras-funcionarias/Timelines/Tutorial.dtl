@@ -1,3 +1,4 @@
+[style name="Custom1"]
 join Moira1 right
 Moira1: Vale, esta es tu mesa. Aquí irán pasando los que tengan cita.
 Moira1: Tienes que revisar que su documentación está en regla.
